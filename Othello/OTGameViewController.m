@@ -6,20 +6,22 @@
 //  Copyright (c) 2015 Daniel Niemeyer. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "OTGameViewController.h"
 
-@interface ViewController ()
+@interface OTGameViewController ()
 
 @end
 
-@implementation ViewController
+@implementation OTGameViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }

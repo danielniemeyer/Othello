@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  OTBoardViewController.h
 //  Othello
 //
 //  Created by Daniel Niemeyer on 7/27/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface OTBoardViewController : UIViewController
 
 @end
-

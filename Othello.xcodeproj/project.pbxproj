@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		9DCC62E71B66AEE70047F914 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DCC62E61B66AEE70047F914 /* main.m */; };
 		9DCC62EA1B66AEE70047F914 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DCC62E91B66AEE70047F914 /* AppDelegate.m */; };
-		9DCC62ED1B66AEE70047F914 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DCC62EC1B66AEE70047F914 /* ViewController.m */; };
+		9DCC62ED1B66AEE70047F914 /* OTGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DCC62EC1B66AEE70047F914 /* OTGameViewController.m */; };
 		9DCC62F01B66AEE70047F914 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DCC62EE1B66AEE70047F914 /* Main.storyboard */; };
 		9DCC62F21B66AEE70047F914 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DCC62F11B66AEE70047F914 /* Images.xcassets */; };
 		9DCC62F51B66AEE70047F914 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DCC62F31B66AEE70047F914 /* LaunchScreen.xib */; };
 		9DCC63011B66AEE70047F914 /* OthelloTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DCC63001B66AEE70047F914 /* OthelloTests.m */; };
+		9DCC630C1B66BC3A0047F914 /* OTBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DCC630B1B66BC3A0047F914 /* OTBoardViewController.m */; };
+		9DCC63101B66D8520047F914 /* OTPiece.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DCC630F1B66D8520047F914 /* OTPiece.m */; };
+		9DCC63131B66E17B0047F914 /* OTBoardViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DCC63121B66E17B0047F914 /* OTBoardViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +35,20 @@
 		9DCC62E61B66AEE70047F914 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9DCC62E81B66AEE70047F914 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9DCC62E91B66AEE70047F914 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9DCC62EB1B66AEE70047F914 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9DCC62EC1B66AEE70047F914 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9DCC62EB1B66AEE70047F914 /* OTGameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OTGameViewController.h; sourceTree = "<group>"; };
+		9DCC62EC1B66AEE70047F914 /* OTGameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OTGameViewController.m; sourceTree = "<group>"; };
 		9DCC62EF1B66AEE70047F914 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9DCC62F11B66AEE70047F914 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9DCC62F41B66AEE70047F914 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		9DCC62FA1B66AEE70047F914 /* OthelloTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OthelloTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DCC62FF1B66AEE70047F914 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DCC63001B66AEE70047F914 /* OthelloTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OthelloTests.m; sourceTree = "<group>"; };
+		9DCC630A1B66BC3A0047F914 /* OTBoardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OTBoardViewController.h; path = Board/OTBoardViewController.h; sourceTree = "<group>"; };
+		9DCC630B1B66BC3A0047F914 /* OTBoardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OTBoardViewController.m; path = Board/OTBoardViewController.m; sourceTree = "<group>"; };
+		9DCC630E1B66D8520047F914 /* OTPiece.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OTPiece.h; path = Board/OTPiece.h; sourceTree = "<group>"; };
+		9DCC630F1B66D8520047F914 /* OTPiece.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OTPiece.m; path = Board/OTPiece.m; sourceTree = "<group>"; };
+		9DCC63111B66E17B0047F914 /* OTBoardViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OTBoardViewModel.h; path = Board/OTBoardViewModel.h; sourceTree = "<group>"; };
+		9DCC63121B66E17B0047F914 /* OTBoardViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OTBoardViewModel.m; path = Board/OTBoardViewModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +92,9 @@
 			children = (
 				9DCC62E81B66AEE70047F914 /* AppDelegate.h */,
 				9DCC62E91B66AEE70047F914 /* AppDelegate.m */,
-				9DCC62EB1B66AEE70047F914 /* ViewController.h */,
-				9DCC62EC1B66AEE70047F914 /* ViewController.m */,
+				9DCC62EB1B66AEE70047F914 /* OTGameViewController.h */,
+				9DCC62EC1B66AEE70047F914 /* OTGameViewController.m */,
+				9DCC630D1B66BC3E0047F914 /* Board */,
 				9DCC62EE1B66AEE70047F914 /* Main.storyboard */,
 				9DCC62F11B66AEE70047F914 /* Images.xcassets */,
 				9DCC62F31B66AEE70047F914 /* LaunchScreen.xib */,
@@ -117,6 +127,19 @@
 				9DCC62FF1B66AEE70047F914 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9DCC630D1B66BC3E0047F914 /* Board */ = {
+			isa = PBXGroup;
+			children = (
+				9DCC630A1B66BC3A0047F914 /* OTBoardViewController.h */,
+				9DCC630B1B66BC3A0047F914 /* OTBoardViewController.m */,
+				9DCC63111B66E17B0047F914 /* OTBoardViewModel.h */,
+				9DCC63121B66E17B0047F914 /* OTBoardViewModel.m */,
+				9DCC630E1B66D8520047F914 /* OTPiece.h */,
+				9DCC630F1B66D8520047F914 /* OTPiece.m */,
+			);
+			name = Board;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,7 +242,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DCC62ED1B66AEE70047F914 /* ViewController.m in Sources */,
+				9DCC63131B66E17B0047F914 /* OTBoardViewModel.m in Sources */,
+				9DCC630C1B66BC3A0047F914 /* OTBoardViewController.m in Sources */,
+				9DCC62ED1B66AEE70047F914 /* OTGameViewController.m in Sources */,
+				9DCC63101B66D8520047F914 /* OTPiece.m in Sources */,
 				9DCC62EA1B66AEE70047F914 /* AppDelegate.m in Sources */,
 				9DCC62E71B66AEE70047F914 /* main.m in Sources */,
 			);
