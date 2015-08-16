@@ -7,6 +7,7 @@
 //
 
 #import "OTGameViewController.h"
+#import "OTBoardViewController.h"
 
 @interface OTGameViewController ()
 
@@ -24,6 +25,15 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)updateHUDWithUserInfo:(NSDictionary *)userInfo
+{
+    NSInteger player1Score = [userInfo[GAME_HUD_PLAYER1SCORE] integerValue];
+    NSInteger player2Score = [userInfo[GAME_HUD_PLAYER2SCORE] integerValue];
+    
+    self.player1ScoreLabel.text = [NSString stringWithFormat:@"%ld", (long)player1Score];
+    self.player2ScoreLabel.text = [NSString stringWithFormat:@"%ld", (long)player2Score];
 }
 
 @end

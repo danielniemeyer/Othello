@@ -92,6 +92,11 @@
     return self.player;
 }
 
+- (OTPieceType)otherPlayer
+{
+    return self.player == OTPieceTypeBlack? OTPieceTypeWhite : OTPieceTypeBlack;
+}
+
 #pragma mark --
 #pragma mark Private Methods
 #pragma mark --
@@ -170,7 +175,7 @@
     }
     
     // Check if other player has any valid moves left!
-    OTPieceType otherPlayer = self.player == OTPieceTypeBlack? OTPieceTypeWhite : OTPieceTypeBlack;
+    OTPieceType otherPlayer = [self otherPlayer];
     
     if (![self canMovePlayer:otherPlayer])
     {

@@ -58,4 +58,9 @@
 //
 - (OTPieceType)currentPlayer;
 
+//
+// Getter for other player
+//
+- (OTPieceType)otherPlayer;
+
 @end

@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol OTBoardViewControllerDelegate <NSObject>
+@required
+
+@end
+
 @interface OTBoardViewController : UIViewController
 
 @end

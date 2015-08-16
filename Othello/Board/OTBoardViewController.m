@@ -7,6 +7,7 @@
 //
 
 #import "OTBoardViewController.h"
+#import "OTGameViewController.h"
 #import "OTBoardViewModel.h"
 #import "OTPiece.h"
 
@@ -152,13 +153,26 @@
     // Check row/colunm boundaries
     NSParameterAssert(boardColunm < BOARD_COLUMN_COUNT || boardRow < BOARD_ROW_COUNT);
     
-    // Check if valid move
+    // Make move
     OTCoordinate coordinate = OTCoordinateMake(boardColunm, boardRow);
+    [self dropPieceAtCoordinate:coordinate];
+}
+
+- (void)dropPieceAtCoordinate:(OTCoordinate)coordinate
+{
+    // Place piece and update user info!
     OTPieceType currentPlayer = [self.gameModel currentPlayer];
     
     if ([self.gameModel isValidMove:coordinate forPlayer:currentPlayer])
     {
         [self placePiece:[self.gameModel dropPieceAtCoordiate:coordinate] atCoordinate:coordinate];
+        
+        // Turn is over, update user info
+        NSDictionary *userInfo = @{GAME_HUD_PLAYER1SCORE : @([self.gameModel scoreForPlayer:currentPlayer]),
+                                   GAME_HUD_PLAYER2SCORE : @([self.gameModel scoreForPlayer:[self.gameModel currentPlayer]])};
+        
+        OTGameViewController *controller = (OTGameViewController *)[self parentViewController];
+        [controller updateHUDWithUserInfo:userInfo];
     }
 }
 
